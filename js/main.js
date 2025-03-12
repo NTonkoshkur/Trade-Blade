@@ -125,4 +125,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+//Burger
+const burgerMenu = document.querySelector('.burger__menu');
+const navList = document.querySelector('.nav__list');
+burgerMenu.addEventListener('click', () => {
+    navList.classList.toggle('active');
+    burgerMenu.classList.toggle('active');
+});
+
+
 

@@ -10,18 +10,14 @@
     outline: 0;
     text-decoration: none;
 }
-
 body {
     width: 100%;
     overflow-x: hidden;
     background-color: #030718;
 }
-
-
 button {
     cursor: pointer;
 }
-
 .container {
     max-width: 1440px;
     padding: 0 80px;
@@ -33,42 +29,23 @@ button {
 /* Nav */
 
 .burger__menu {
-    display: none;  /* Скрыто на десктопах */
-    background: none;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
     border: none;
     cursor: pointer;
-    position: relative;
-    z-index: 1000; /* Чтобы кнопка всегда была поверх остальных элементов */
-    padding: 10px;
+    transition: transform 0.3s ease;
 }
-
-/* Стили для линий бургер-меню */
 .burger__line {
-    display: block;
-    width: 23px;
-    height: 2px;
-    border-radius: 5px;
-    background-color: #FFFFFF; /* Цвет линии */
-    margin: 5px auto; /* Отступы между линиями */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Плавные анимации */
+    width: 30px;
+    height: 1px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    transition: all 0.3s ease;
 }
-
-.burger__menu.open .burger__line:nth-child(1) {
-    transform: rotate(45deg);
-    position: absolute;
-    top: 0;
-}
-
-.burger__menu.open .burger__line:nth-child(2) {
-    opacity: 0; /* Скрыть вторую линию */
-}
-
-.burger__menu.open .burger__line:nth-child(3) {
-    transform: rotate(-45deg);
-    position: absolute;
-    bottom: 0;
-}
-
 .nav {
     display: flex;
     align-items: center;
@@ -214,8 +191,6 @@ button {
 
 /* Profit */
 
-
-
 .profit__figures {
     display: flex;
     align-items: center;
@@ -293,7 +268,6 @@ button {
     height: 604px;
     padding-left: 80px;
 }
-
 .past__deals-title {
     font-family: 'IBMPlex', sans-serif;
     font-size: 44px;
@@ -304,14 +278,12 @@ button {
     color: #FFFFFF;
     padding: 96px 0 4px 0;
 }
-
 .past__deals-list {
     list-style-type: none;
     margin: 0;
     animation: blink 1.5s infinite;
     padding-bottom: 72px;
 }
-
 .past__deals-online {
     font-family: 'IBMPlex', sans-serif;
     font-size: 14px;
@@ -322,7 +294,6 @@ button {
     padding-left: 12px;
     color: #35FF9E;
 }
-
 .past__deals-online::before {
     content: "•";
     position: absolute;
@@ -332,7 +303,6 @@ button {
     top: 55%;
     transform: translateY(-50%);
 }
-
 @keyframes blink {
     0% {opacity: 1;}
     50% {opacity: 0.5;}
@@ -372,7 +342,6 @@ button {
     font-size: 12px;
     color: #bbb;
 }
-
 .swiper-slide-bottom {
     display: flex;
     align-items: center;
@@ -428,7 +397,6 @@ button {
     background-color: #FFFFFF;
     clip-path: polygon(0% 0%, calc(10% - 450px) -220%, calc(70% - 370px) 20%, 100% 20%, 100% 100%, 0% 100%);
 }
-
 .about__company-inner {
     display: flex;
     align-items: center;
@@ -455,7 +423,6 @@ button {
     opacity: 80%;
     width: 413px;
 }
-
 .about__company-form {
     width: 631px;
     height: 244px;
@@ -463,7 +430,6 @@ button {
     background-color: #6A54FF;
     margin: 92px 0 0 237px;
 }
-
 .company__form-title {
     font-family: 'IBMPlex', sans-serif;
     font-size: 28px;
@@ -474,7 +440,6 @@ button {
     text-align: center;
     padding: 32px 64px;
 }
-
 .company__form {
     display: flex;
     align-items: center;
@@ -519,13 +484,11 @@ button {
     border: 1px solid #57E1FF;
     box-shadow: 0 0 4px 1px rgba(87, 225, 255, 0.5);
 }
-
 /* Tariffs */
 
 .tariffs__plans {
     height: 940px;
 }
-
 .tariffs__plans-title {
     position: relative;
     right: 330px;
@@ -540,7 +503,6 @@ button {
     color: #FFFFFF;
     padding: 96px 0 40px 0;
 }
-
 .tariffs__plans-button {
     width: 415px;
     margin: 0 auto 44px auto;
@@ -551,8 +513,6 @@ button {
     display: flex;
     justify-content: center;
 }
-
-
 .spot {
     font-size: 24px;
     font-weight: 700;
@@ -567,7 +527,6 @@ button {
     border: 1px solid #57E1FF;
     box-shadow: 0 0 4px 1px rgba(87, 225, 255, 0.5);
 }
-
 .fue {
     font-size: 24px;
     font-weight: 500;
@@ -580,21 +539,18 @@ button {
     color: #57E1FF;
     border-radius: 4px;
 }
-
 .tariffs__plans-list {
     display: flex;
     justify-content: center;
     gap: 20px;
     color: #FFF;
 }
-
 .plan__standart {
     width: 413px;
     height: 556px;
     border: 1px solid #6A54FF;
     border-radius: 8px;
 }
-
 .plan__standart-title {
     font-family: 'IBMPlex', sans-serif;
     font-size: 32px;
@@ -604,7 +560,6 @@ button {
     text-transform: uppercase;
     padding: 24px 0 56px 24px;
 }
-
 .plan__standart-price {
     position: relative;
     display: flex;
@@ -612,7 +567,6 @@ button {
     justify-content: space-between;
     padding: 112px 24px 0 24px;
 }
-
 .standart__discount {
     font-family: 'IBMPlex', sans-serif;
     position: absolute;
@@ -623,7 +577,6 @@ button {
     line-height: 20px;
     color: #35FF9E;
 }
-
 .standart__total {
     font-family: 'IBMPlex', sans-serif;
     font-size: 35px;
@@ -632,7 +585,6 @@ button {
     letter-spacing: -0.04em;
     color: #FFFFFF;
 }
-
 .subscription__standart {
     background: rgba(255, 255, 255, 0.2);;
     color: #FFFFFF;
@@ -642,8 +594,6 @@ button {
     padding: 8px 5px 6px 8px;
     border-radius: 4px;
 }
-
-
 .standart__checklist-item {
     display: flex;
     align-items: flex-start;
@@ -651,7 +601,6 @@ button {
     padding: 8px 0 8px 24px;
     gap: 10px;
 }
-
 .standart__checklist-title {
     font-family: 'IBMPlex', sans-serif;
     font-size: 16px;
@@ -659,7 +608,6 @@ button {
     line-height: 20px;
     color: #FFFFFF;
 }
-
 .plan__button {
     display: flex;
     flex-direction: column;
@@ -669,7 +617,6 @@ button {
     border-radius: 3px;
     box-shadow: 0 0 4px 1px rgba(87, 225, 255, 0.5);
 }
-
 .plan__button-title {
     font-family: 'IBMPlex', sans-serif;
     font-size: 16px;
@@ -678,7 +625,6 @@ button {
     text-transform: uppercase;
     color: #030718;
 }
-
 .plan__button-subtitle {
     font-family: 'IBMPlex', sans-serif;
     font-size: 12px;
@@ -687,7 +633,6 @@ button {
     color: #030718;
     opacity: 56%;
 }
-
 .plan__vip {
     width: 413px;
     height: 556px;
@@ -695,7 +640,6 @@ button {
     border-radius: 8px;
     background-color: #6A54FF;
 }
-
 .plan__vip-title {
     font-family: 'IBMPlex', sans-serif;
     font-size: 32px;
@@ -705,7 +649,6 @@ button {
     text-transform: uppercase;
     padding: 24px 0 56px 24px;
 }
-
 .plan__vip-price {
     position: relative;
     display: flex;
@@ -713,7 +656,6 @@ button {
     justify-content: space-between;
     padding: 37px 24px 0 24px;
 }
-
 .vip__discount {
     font-family: 'IBMPlex', sans-serif;
     position: absolute;
@@ -724,7 +666,6 @@ button {
     line-height: 20px;
     color: #35FF9E;
 }
-
 .vip__total {
     font-family: 'IBMPlex', sans-serif;
     font-size: 35px;
@@ -733,7 +674,6 @@ button {
     letter-spacing: -0.04em;
     color: #FFFFFF;
 }
-
 .subscription__vip {
     background: rgba(255, 255, 255, 0.2);;
     color: #FFFFFF;
@@ -743,7 +683,6 @@ button {
     padding: 8px 5px 6px 8px;
     border-radius: 4px;
 }
-
 .vip__checklist-item {
     display: flex;
     align-items: flex-start;
@@ -751,7 +690,6 @@ button {
     padding: 8px 0 8px 24px;
     gap: 10px;
 }
-
 .vip__checklist-title {
     font-family: 'IBMPlex', sans-serif;
     font-size: 16px;
@@ -767,7 +705,6 @@ button {
     background-color: #FFFFFF;
     margin: 0 auto;
 }
-
 .faq__title {
     font-family: 'IBMPlex', sans-serif;
     font-size: 44px;
@@ -777,7 +714,6 @@ button {
     text-transform: uppercase;
     padding: 96px 0 64px 0;
 }
-
 .accordion {
     width: 100%;
     max-width: 846px;
@@ -786,7 +722,6 @@ button {
     flex-direction: column;
     gap: 12px;
 }
-
 .accordion-header {
     padding: 16px;
     cursor: pointer;
@@ -800,7 +735,6 @@ button {
     background-color: #EAEFF0;
     color: #000000;
 }
-
 .accordion__header-title {
     font-family: 'IBMPlex', sans-serif;
     font-size: 24px;
@@ -808,7 +742,6 @@ button {
     line-height: 32px;
     letter-spacing: -0.04em;
 }
-
 .accordion__header-subtitle {
     font-family: 'IBMPlex', sans-serif;
     font-size: 16px;
@@ -817,23 +750,19 @@ button {
     opacity: 80%;
     color: #FFFFFF;
 }
-
 .accordion-header.active {
     background-color: #6A54FF;
     color: white;
 }
-
 .accordion-content {
     padding: 0 16px 16px 16px;
     display: none;
     background-color: #6A54FF;
     transition: 0.3s ease-out;
 }
-
 .active {
     display: block;
 }
-
 .accordion-icon {
     width: 24px;
     height: 24px;
@@ -844,7 +773,6 @@ button {
     transform: translateY(-50%);
     transform-origin: center
 }
-
 .rotated {
     transform: translateY(-50%) rotate(180deg);
 }
@@ -868,11 +796,9 @@ button {
 .footer__logo-mob {
     visibility: hidden;
 }
-
 .footer {
     height: 353px;
 }
-
 .footer__title {
     font-family: 'IBMPlex', sans-serif;
     font-size: 14px;
@@ -883,17 +809,14 @@ button {
     opacity: 40%;
     padding-top: 44px;
 }
-
 .footer__logo {
     padding-top: 28px;
 }
-
 .footer__inner {
     display: flex;
     flex-direction: column;
     gap: 200px;
 }
-
 .footer__list {
     font-family: 'IBMPlex', sans-serif;
     font-size: 16px;
@@ -906,17 +829,14 @@ button {
     text-transform: uppercase;
     gap: 20px;
 }
-
 .footer__info-nav {
     display: flex;
     justify-content: space-between;
 }
-
 .footer__logo-rights {
     display: flex;
     justify-content: space-between;
 }
-
 .footer__rights {
     font-family: 'IBMPlex', sans-serif;
     font-size: 14px;
@@ -925,7 +845,6 @@ button {
     color: #FFFFFF;
     opacity: 50%;
 }
-
 .footer__line {
     width: 0.5px;
     opacity: 20%;
@@ -939,9 +858,32 @@ button {
 @media only screen and (min-width: 360px) and (max-width: 599px) {
     .nav__list {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #6A54FF;
+        width: 100%;
+        padding: 10px;
+    }
+    .nav__list.active {
+        display: flex;
+        padding-top: 84px;
     }
     .burger__menu {
-        display: block;
+        display: flex;
+    }
+    .burger__menu.active {
+        transform: rotate(55deg);
+    }
+    .burger__menu.active .burger__line:nth-child(1) {
+        transform: translateY(11px) rotate(80deg);
+    }
+    .burger__menu.active .burger__line:nth-child(2) {
+        opacity: 0;
+    }
+    .burger__menu.active .burger__line:nth-child(3) {
+        transform: translateY(-10px) rotate(-10deg);
     }
     .nav__logo {
         position: absolute;
@@ -953,12 +895,10 @@ button {
     .nav__btn {
         display: none;
     }
-
     .nav {
         justify-content: flex-end;
         padding: 10px 8px 0 10px
     }
-
     .head {
         height: 580px;
     }
@@ -1021,19 +961,16 @@ button {
     .stats__block-number {
         font-size: 35px;
     }
-
     .stats__block {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: flex-start;
         padding: 40px 26px 0 17px;
     }
-
     .past__deals {
         height: 413px;
         padding: 0;
     }
-
     .past__deals-title {
         font-size: 28px;
         line-height: 36px;
@@ -1071,45 +1008,37 @@ button {
         flex-direction: column;
         align-items: flex-start;
     }
-
     .company__form {
         margin: 0 auto;
         width: 320px;
         display: flex;
         flex-direction: column;
     }
-
     .company__button-form {
         width: 320px;
         margin-top: 8px;
     }
-
     .company__email-form {
         width: 320px;
     }
-
     .about__company-form {
         margin: 0 auto;
         width: 350px;
         height: 228px;
     }
-
     .company__form-title{
         font-size: 20px;
         line-height: 28px;
     }
-
     .company__form-title {
         padding: 16px 16px 20px 16px;
         font-size: 20px;
     }
-
     .about__company-title {
         font-size: 28px;
         line-height: 36px;
         padding: 48px 0 0 16px;
     }
-
     .about__company-subtitle {
         width: 350px;
     }
@@ -1117,11 +1046,9 @@ button {
         max-width: 375px;
         padding: 20px;
     }
-
     .tariffs__plans {
         height: 1200px;
     }
-
     .tariffs__plans-title {
         position: inherit;
         display: inherit;
@@ -1131,56 +1058,46 @@ button {
         text-align: left;
         padding: 56px 0 0 16px;
     }
-
     .tariffs__plans-button {
         margin: 24px 16px;
         position: initial;
         width: 340px;
     }
-
     .spot {
         width: 167px;
         padding: 0;
         font-size: 18px;
         line-height: 24px;
     }
-
     .fue {
         padding: 14px 47px;
         width: 167px;
         font-size: 18px;
         line-height: 24px;
     }
-
     .standart__checklist-item {
         padding: 8px 0 8px 16px;
     }
-
     .tariffs__plans-list {
         flex-direction: column;
     }
-
     .plan__standart {
         width: 343px;
         height: 430px;
         margin: 0 auto;
     }
-
     .plan__standart-title {
         padding: 16px 0 24px 16px;
         font-size: 20px;
         line-height: 28px;
     }
-
     .plan__standart-price {
         padding: 24px 16px 0 16px;
     }
-
     .standart__discount {
         top: 20px;
         left: 95px;
     }
-
     .plan__button {
         width: 310px;
         padding: 8px 96px;
@@ -1190,109 +1107,87 @@ button {
         height: 420px;
         margin: 0 auto;
     }
-
     .vip__checklist-item {
         padding: 8px 0 8px 16px;
     }
-
     .plan__vip {
         width: 343px;
         height: 505px;
         margin: 0 auto;
     }
-
     .plan__vip-title {
         padding: 16px 0 24px 16px;
         font-size: 20px;
         line-height: 28px;
     }
-
     .plan__vip-price {
         padding: 24px 16px 0 16px;
     }
-
     .vip__discount {
         top: 20px;
         left: 95px;
     }
-
     .faq__title {
         padding: 56px 16px 40px 16px;
         font-size: 28px;
         line-height: 36px;
     }
-
     .faq {
         min-height: 714px;
     }
-
     .footer {
         height: 560px;
     }
-
     .accordion-item {
         width: 350px;
         margin: 0 auto;
     }
-
     .accordion__header-title {
         font-size: 20px;
         line-height: 28px;
     }
-
     .footer__list-mob {
         visibility: visible;
     }
-
     .footer__logo-mob {
         width: 165px;
         height: 80px;
         visibility: visible;
         padding-left: 15px;
     }
-
     .footer__rights {
         padding: 81px 0 0 16px;
     }
-
     .footer__logo-rights {
         flex-direction: column;
     }
-
     .footer__list {
         display: none;
     }
-
     .footer__list-mob {
         flex-direction: column;
     }
-
     .footer__link {
         font-size: 16px;
         line-height: 20px;
     }
-
     .footer__title {
         font-size: 14px;
         line-height: 20px;
         padding: 0;
         width: 140px;
     }
-
     .footer__inner {
         gap: 78px;
     }
-
     .footer__info-nav {
         padding: 40px 42px 0 15px;
     }
-
     .footer__logo {
         display: none;
     }
     .footer__line {
         display: none;
     }
-
 }
 
