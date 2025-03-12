@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'IBMPlex';
+    src: url("/fonts/IMBPlex/IBMPlexSans-Regular.woff2") format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlex';
+    src: url("/fonts/IMBPlex/IBMPlexSans-Medium.woff2") format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlex';
+    src: url("/fonts/IMBPlex/IBMPlexSans-Bold.woff2") format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
