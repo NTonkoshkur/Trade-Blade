@@ -255,7 +255,7 @@ button {
 }
 .stats__block {
     display: flex;
-    gap: 40px;
+    gap: 20px;
     align-items: flex-start;
     padding: 40px 26px 0 17px;
 }
@@ -974,9 +974,9 @@ button {
     }
     .stats__block {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 130px 200px;
         align-items: flex-start;
-        padding: 40px 26px 0 17px;
+        padding: 40px 0 0 17px;
     }
     .past__deals {
         height: 413px;
