@@ -936,7 +936,7 @@ button {
     .head__form {
         height: 50px;
         max-width: 345px;
-        margin: 0 auto;
+        margin-left: 16px;
     }
     .head__email-form {
         height: 50px;
